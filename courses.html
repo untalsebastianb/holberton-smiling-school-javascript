@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer ></script>
+</head>
+<body id="courses">
+    <div class="hero-img -courses">
+        <header class="container text-center">
+            <nav class="navbar p-0">
+            <div class="col-md-7 px-0 pt-5 pb-4">
+                <a
+                href="/homepage.html"
+                class="d-flex flex-column flex-md-row align-items-center logo m-md-0"
+                >
+                <img
+                    src="/images/smile_off.png"
+                    class="logo-smile"
+                    alt="Logotype Smile"
+                />
+                <img
+                    src="/images/logo.png"
+                    class="logo-text my-2 mx-md-5 mt-md-2"
+                    alt="Isotype SmileSchool"
+                />
+                </a>
+            </div>
+            <div
+                class="burgerIcon position-absolute d-md-none"
+                data-toggle="collapse"
+                aria-controls="collapseNav"
+                aria-expanded="false"
+                href="#collapseNav"
+                aria-label="Open Navigation"
+            ></div>
+            <div class="col-md-5 px-0 collapse d-md-block" id="collapseNav">
+                <ul
+                class="nav d-flex flex-column flex-md-row justify-content-md-between"
+                >
+                <li class="mt-2 mt-md-0">
+                    <a href="/courses.html" class="text-white nav-item-link">COURSES</a>
+                </li>
+                <li class="mt-2 mt-md-0">
+                    <a href="/pricing.html" class="text-white nav-item-link">PRICING</a>
+                </li>
+                <li class="mt-2 mt-md-0">
+                    <a href="#" class="text-white nav-item-link">LOGIN</a>
+                </li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+        <section class="hero container">
+            <div class="text-center px-3 py-5 hero-content my-0 mt-md-5">
+                <div class="d-none d-md-block">
+                    <h1 class="py-5 font-weight-bold text-white">
+                        « Don’t cry because it’s over. 
+                        <span class="text-color-main" > <br> Smile</span> because it happened. »
+                    </h1>
+                </div>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class="section-search">
+            <div class="container p-0 bg-purple" id="search-filters">
+                <div class="container py-4 text-white text-uppercase font-weight-bold">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-4 form-group">
+                                <label for="keywords" class="d-block">Keywords</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text bg-white">
+                                            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                fill-rule="evenodd" clip-rule="evenodd">
+                                                <path
+                                                    d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z" />
+                                                </svg>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="keywords" placeholder="Search by keywords"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 form-group">
+                                <label for="topic" class="d-block">Topic</label>
+                                <div class="input-group mb-2">
+                                    <select name="topic" id="topic" class="form-control">
+                                        <option value="all">All</option>
+                                        <option value="novice">Novice</option>
+                                        <option value="intermediate">Intermediate</option>
+                                        <option value="expert">Expert</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 form-group">
+                                <label for="sort-by" class="d-block">Sort By</label>
+                                <div class="input-group mb-2">
+                                    <select name="sort-by" id="sort-by" class="form-control">
+                                        <option value="most_popular">Most Popular</option>
+                                        <option value="most_recent">Most Recent</option>
+                                        <option value="most_viewed">Most Viewed</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="sectionCourses">
+            <div id="coursesContainer" class="container">
+                <div class="load-container">
+                    <div class="loader"></div>
+                </div>
+                <h5 class="my-5 ml-4 text-black-50 d-none"></h5>
+                <div id="coursesList" class="row d-none">
+                    <!-- Courses -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-color-secondary">
+        <div class="container p-5 text-center">
+            <div class="mb-5 d-md-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <img src="/images/smile_off.png" class="logo-smile mr-3" alt="logo smile">
+                    <img src="/images/logo.png" class="logo-text" alt="Logo smileshools">
+                </div>
+                <div class="social-media mt-4 mt-md-0">
+                    <a href="#" aria-label="facebook"><span class="facebook-icon"></span></a>
+                    <a href="#" aria-label="twitter"><span class="twitter-icon"></span></a>
+                    <a href="#" aria-label="instagram"><span class="instagram-icon"></span></a>
+                </div>
+            </div>
+            <span class="text-secondary text-center my-5">©smileschool 2020</span>
+        </div>
+    </footer>
+</body>
+</html>
